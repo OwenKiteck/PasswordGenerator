@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&family=Press+Start+2P&family=Supermercado+One&display=swap');
+
+* {
+    /* Includes the padding and border when setting a width or height for an element */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(234, 253, 215);
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    /* Flexbox is used here to center the div with the id of "container" vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Setting the height to 100vh so the div will be centered vertically in browser window (AKA Viewport) */
+    height: 100vh;
+    padding: 25px;
+}
+
+
+#container {
+    background-color: rgb(132, 141, 146);
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(159, 226, 159);
+    /* Removes border */
+    border: none;
+    color: white;
+    /* changes the cursor to the hand pointer when hovering over an element (the button) */
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(66, 66, 66);
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+#clipboard {
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 18px;
+    width: 100%;
+}
+
+/* Media query */
+@media (max-width: 400px){
+    #result-container {
+        font-size: 14px;
+    }
+}
