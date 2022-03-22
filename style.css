@@ -32,7 +32,7 @@ h2 {
 }
 
 .btn {
-    background-color: rgb(159, 226, 159);
+    background-color: rgb(146, 228, 171, .8);
     /* Removes border */
     border: none;
     color: white;
